@@ -1,0 +1,227 @@
+body {
+    background:#1e272e;
+}
+#wrap{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.solarsystem {
+    margin:0;
+    padding: 0;
+    position: relative;
+    height: 600px;
+    list-style: none;
+    overflow: hidden;
+}
+.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: 2px dotted #394057;
+}
+.solarsystem li span {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.solarsystem li.sun {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fc3;
+    top: 282px;
+    left: 282px;
+    border: none;
+    box-shadow: 0 0 50px #c90;
+}
+.solarsystem li.mercury {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     top: 250px;
+     left: 250px;
+ }
+.solarsystem li.mercury span {
+    background: #b6bac5;
+    top: 10px;
+    left: 10px;
+}
+.solarsystem li.venus {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    top: 220px;
+    left: 220px;
+}
+.solarsystem li.venus span {
+    background: #bf8639;
+    top: 118px;
+    left: 5px;
+}
+.solarsystem li.earth {
+    width: 220px;
+    height: 220px;
+    border-radius: 112px;
+    top: 190px;
+    left: 190px;
+}
+.solarsystem li.earth span {
+    background: #06c;
+    top: 56px;
+    left: 5px;
+}
+.solarsystem li.earth span.moon {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #ccc;
+    top: 12px;
+    left: 12px;
+}
+.solarsystem li.mars {
+    width: 280px;
+    height: 280px;
+    border-radius: 142px;
+    top: 160px;
+    left: 160px;
+}
+.solarsystem li.mars span {
+    background: #aa4200;
+    top: 0;
+    left: 175px;
+}
+.solarsystem li.asteroids_meteorids {
+    top: 135px;
+    left: 135px;
+    background: url(asteroids_meteorids.png) no-repeat 0 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+    border: none;
+}
+.solarsystem li.jupiter {
+    width: 350px;
+    height: 350px;
+    border-radius: 172px;
+    top: 125px;
+    left: 125px;
+}
+.solarsystem li.jupiter span {
+    background: #e0ae6f;
+    top: 67px;
+    left: 24px;
+}
+.solarsystem li.saturn {
+    width: 410px;
+    height: 410px;
+    border-radius: 202px;
+    top: 95px;
+    left: 95px;
+}
+.solarsystem li.saturn span {
+    background: #dfd3a9;
+    top: 19px;
+    left: 300px;
+}
+.solarsystem li.saturn span.ring {
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid #5a4e34;
+    left: -3px;
+    top: -3px;
+    transform: skewY(50deg);
+}
+.solarsystem li.uranus {
+    width: 470px;
+    height: 470px;
+    border-radius: 232px;
+    top: 65px;
+    left: 65px;
+}
+.solarsystem li.uranus span {
+    background: #82b3d1;
+    top: 4px;
+    left: 300px;
+}
+.solarsystem li.neptune {
+    width: 530px;
+    height: 530px;
+    border-radius: 262px;
+    top: 35px;
+    left: 35px;
+}
+.solarsystem li.neptune span {
+    background: #77c2ec;
+    top: 0px;
+    left: 200px;
+}
+.solarsystem li.pluto {
+    width: 590px;
+    height: 590px;
+    border-radius: 292px;
+    top: 5px;
+    left: 5px;
+}
+.solarsystem li.pluto span {
+    background: #7c6a5c;
+    top: 79px;
+    left: 79px;
+}
+.solarsystem li {
+    animation: orbit linear infinite;
+}
+.solarsystem li.earth span {
+    animation: orbit linear infinite;
+}
+.solarsystem li.mercury {
+    animation-duration: 5s;
+}
+.solarsystem li.venus {
+    animation-duration: 8s;
+}
+.solarsystem li.earth {
+    animation-duration: 12s;
+}
+.solarsystem li.earth span {
+    animation-duration: 2s;
+}
+.solarsystem li.mars {
+    animation-duration: 20s;
+}
+.solarsystem li.asteroids_meteorids {
+    animation-duration: 50s;
+}
+.solarsystem li.jupiter {
+    animation-duration: 30s;
+}
+.solarsystem li.saturn {
+    animation-duration: 60s;
+}
+.solarsystem li.uranus {
+    animation-duration: 70s;
+}
+.solarsystem li.neptune {
+    animation-duration: 100s;
+}
+.solarsystem li.pluto {
+    animation-duration: 120s;
+}
+@keyframes orbit {
+    from {
+        transform:rotate(0deg)
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}
+

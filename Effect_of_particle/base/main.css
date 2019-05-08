@@ -1,0 +1,300 @@
+html,body{
+    background-color: #333333;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    perspective: 400px;
+    transform-style: preserve-3d;
+}
+.sub-wrap{
+    transform-style: preserve-3d;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: rotate3d 10s linear infinite;
+}
+.ring{
+    position: absolute;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+.box{
+    transform-style: preserve-3d;
+    height: 150px;
+    position: absolute;
+    transform-origin: 0 0;
+    left: 50%;
+    top:50%;
+}
+.ball{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: -3px;
+    top:100%;
+    transform: rotateX(90deg);
+}
+.box.box-1{
+    transform: rotateZ(10deg);
+}
+.box.box-2{
+    transform: rotateZ(20deg);
+}
+.box.box-3{
+    transform: rotateZ(30deg);
+}
+.box.box-4{
+    transform: rotateZ(40deg);
+}
+.box.box-5{
+    transform: rotateZ(50deg);
+}
+.box.box-6{
+    transform: rotateZ(60deg);
+}
+.box.box-7{
+    transform: rotateZ(70deg);
+}
+.box.box-8{
+    transform: rotateZ(80deg);
+}
+.box.box-9{
+    transform: rotateZ(90deg);
+}
+.box.box-10{
+    transform: rotateZ(100deg);
+}
+.box.box-11{
+    transform: rotateZ(110deg);
+}
+.box.box-12{
+    transform: rotateZ(120deg);
+}
+.box.box-13{
+    transform: rotateZ(130deg);
+}
+.box.box-14{
+    transform: rotateZ(140deg);
+}
+.box.box-15{
+    transform: rotateZ(150deg);
+}
+.box.box-16{
+    transform: rotateZ(160deg);
+}
+.box.box-17{
+    transform: rotateZ(170deg);
+}
+.box.box-18{
+    transform: rotateZ(180deg);
+}
+.box.box-19{
+    transform: rotateZ(190deg);
+}
+.box.box-20{
+    transform: rotateZ(200deg);
+}
+.box.box-21{
+    transform: rotateZ(210deg);
+}
+.box.box-22{
+    transform: rotateZ(220deg);
+}
+.box.box-23{
+    transform: rotateZ(230deg);
+}
+.box.box-24{
+    transform: rotateZ(240deg);
+}
+.box.box-25{
+    transform: rotateZ(250deg);
+}
+.box.box-26{
+    transform: rotateZ(260deg);
+}
+.box.box-27{
+    transform: rotateZ(270deg);
+}
+.box.box-28{
+    transform: rotateZ(280deg);
+}
+.box.box-29{
+    transform: rotateZ(290deg);
+}
+.box.box-30{
+    transform: rotateZ(300deg);
+}
+.box.box-31{
+    transform: rotateZ(310deg);
+}
+.box.box-32{
+    transform: rotateZ(320deg);
+}
+.box.box-33{
+    transform: rotateZ(330deg);
+}
+.box.box-34{
+    transform: rotateZ(340deg);
+}
+.box.box-35{
+    transform: rotateZ(350deg);
+}
+.box.box-36{
+    transform: rotateZ(360deg);
+}
+.ring-1{
+    transform: rotateY(15deg);
+}
+.ring-2{
+    transform: rotateY(30deg);
+}
+.ring-3{
+    transform: rotateY(45deg);
+}
+.ring-4{
+    transform: rotateY(60deg);
+}
+.ring-5{
+    transform: rotateY(75deg);
+}
+.ring-6{
+    transform: rotateY(90deg);
+}
+.ring-7{
+    transform: rotateY(105deg);
+}
+.ring-8{
+    transform: rotateY(120deg);
+}
+.ring-9{
+    transform: rotateY(135deg);
+}
+.ring-10{
+    transform: rotateY(150deg);
+}
+.ring-11{
+    transform: rotateY(165deg);
+}
+.ring-12{
+    transform: rotateY(180deg);
+}
+.box-1 .ball,.box-36 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #ff9955;
+}
+.box-2 .ball,.box-35 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #ffb555;
+}
+.box-3 .ball,.box-34 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #ffd255;
+}
+.box-4 .ball,.box-33 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #ffee55;
+}
+.box-5 .ball,.box-32 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #f4ff55;
+}
+.box-6 .ball,.box-31 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color: #d7ff55;
+}
+.box-7 .ball,.box-30 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#bbff55;
+}
+.box-8 .ball,.box-29 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#9fff55;
+}
+.box-9 .ball,.box-28 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#66ff55;
+}
+.box-10 .ball,.box-27 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ff60;
+}
+.box-11 .ball,.box-26 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ff7d;
+}
+.box-12 .ball,.box-25 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ff99;
+}
+.box-13 .ball,.box-24 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ffb5;
+}
+.box-14 .ball,.box-23 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ffd2;
+}
+.box-15 .ball,.box-22 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55ffee;
+}
+.box-16 .ball,.box-21 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55f4ff;
+}
+.box-17 .ball,.box-20 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55d7ff;
+}
+.box-18 .ball,.box-19 .ball{
+    animation: pulsate 0.5s infinite 0s alternate both;
+    background-color:#55bbff;
+}
+
+@keyframes rotate3d{
+0%{
+transform:rotate3d(1,1,1,0deg)
+}
+25%{
+transform:rotate3d(1,1,1,90deg)
+}
+50%{
+transform:rotate3d(1,1,1,180deg)
+}
+75%{
+transform:rotate3d(1,1,1,270deg)
+}
+100%{
+transform:rotate3d(1,1,1,360de)
+}
+}
+
+
+
+@keyframes pulsate {
+    0%{
+        transform: rotateX(90deg) scale(0.3) translateZ(20px);
+    }
+    100%{
+        transform: rotateX(90deg) scale(1) translateZ(0px);
+    }
+}

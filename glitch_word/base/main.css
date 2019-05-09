@@ -1,0 +1,117 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+html,body{
+  height: 100%;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.container{
+  height: 100%;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .glitch{
+  margin: 0;
+  color:#ffffff;
+  font-size: 100px;
+  font-family: 'Roboto';
+  position: relative;
+}
+.container .glitch::before,
+.container .glitch::after{
+  content:'GLITCH';
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  background-color: #333333;
+  color:#ffffff
+}
+.container .glitch::before{
+  left: 8px;
+  text-shadow: 2px 0 #00ffea;
+  animation: glitch 3s infinite linear;
+}
+.container .glitch::after{
+  left: 8px;
+  text-shadow: -2px 0 #fe3a7f;
+  animation: glitch 2s infinite linear;
+}
+
+@keyframes glitch {
+  0%{
+    clip:rect(30px,9999px,99px,0);
+  }
+  5%{
+    clip: rect(3px,9999px,37px,0);
+  }
+  10%{
+    clip:rect(13px,9999px,52px,0);
+  }
+  15%{
+    clip:rect(32px,9999px,52px,0);
+  }
+  20%{
+    clip:rect(33px,9999px,97px,0);
+  }
+  25%{
+    clip: rect(81px,9999px,26px,0);
+  }
+  30%{
+    clip:rect(24px,9999px,74px,0);
+  }
+  35%{
+    clip: rect(10px,9999px,76px,0);
+  }
+  40%{
+    clip:rect(83px,9999px,14px,0);
+  }
+  45%{
+    clip:rect(83px,9999px,14px,0);
+  }
+  50%{
+    clip:rect(78px,9999px,72px,0);
+  }
+  55%{
+    clip: rect(76px,9999px,72px,0);
+  }
+  60%{
+    clip:rect(49px,9999px,84px,0);
+  }
+  65%{
+    clip: rect(83px,9999px,57px,0);
+  }
+  70%{
+    clip:rect(91px,9999px,35px,0);
+  }
+  75%{
+    clip:rect(49px,9999px,67px,0);
+  }
+  80%{
+    clip:rect(56px,9999px,93px,0);
+  }
+  85%{
+    clip:rect(85px,9999px,83px,0);
+  }
+  90%{
+    clip: rect(98px,9999px,82px,0);
+  }
+  95%{
+    clip:rect(48px,9999px,39px,0);
+  }
+  100%{
+    clip:rect(35px,9999px,91px,0);
+  }
+}
+
+
+
+
+
+
+
+
+
+

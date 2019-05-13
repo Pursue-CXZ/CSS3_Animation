@@ -1,0 +1,101 @@
+html,body{
+    background-color: #487eb0;
+    overflow: hidden;
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+.bubble{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*background-color: yellow;*/
+    position: absolute;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2),inset 0 10px 30px 5px rgba(255,255,255,1);
+}
+.b1{
+    left: -5%;
+    top:5%;
+    transform: scale(0.6);
+    animation: bubble 25s linear infinite,direction 2s ease-in-out infinite alternate;
+}
+.b2{
+    left: 5%;
+    top:80%;
+    transform: scale(0.4);
+    animation: bubble 20s linear infinite,direction 4s ease-in-out infinite alternate;
+}
+.b3{
+    left: 10%;
+    top:40%;
+    transform: scale(0.7);
+    animation: bubble 28s linear infinite,direction 2s ease-in-out infinite alternate;
+}
+.b4{
+    left: 20%;
+    top:0;
+    transform: scale(0.3);
+    animation: bubble 22s linear infinite,direction 3s ease-in-out infinite alternate;
+}
+.b5{
+    left: 30%;
+    top:50%;
+    transform: scale(0.5);
+    animation: bubble 29s linear infinite,direction 4s ease-in-out infinite alternate;
+}
+.b6{
+    left: 50%;
+    top:0;
+    transform: scale(0.8);
+    animation: bubble 21s linear infinite,direction 2s ease-in-out infinite alternate;
+}
+.b7{
+    left: 65%;
+    top:70%;
+    transform: scale(0.4);
+    animation: bubble 20s linear infinite,direction 2s ease-in-out infinite alternate;
+}
+.b8{
+    left: 80%;
+    top:10%;
+    transform: scale(0.3);
+    animation: bubble 22s linear infinite,direction 3s ease-in-out infinite alternate;
+}
+.b9{
+    left: 90%;
+    top:50%;
+    transform: scale(0.6);
+    animation: bubble 29s linear infinite,direction 4s ease-in-out infinite alternate;
+}
+.b10{
+    left: 80%;
+    top:80%;
+    transform: scale(0.3);
+    animation: bubble 26s linear infinite,direction 2s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+    0%{
+        margin-top:100%;
+    }
+    100%{
+        margin-top: -100%;
+    }
+}
+@keyframes direction {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+

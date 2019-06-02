@@ -1,0 +1,91 @@
+html,body{
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    margin: 7px;
+    padding: 6px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    box-sizing: padding-box;
+}
+.box img{
+    max-width: 100%;
+}
+.box .border{
+    position: absolute;
+    opacity: 0.45;
+}
+.box .border:before,
+.box .border:after,
+.box .border div:before,
+.box .border div:after{
+    background-color: #ffffff;
+    position: absolute;
+    content: '';
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.box .border:before,
+.box .border:after{
+    width: 0;
+    height: 1px;
+}
+.box .border div:before,
+.box .border div:after{
+    width: 1px;
+    height: 0;
+}
+.box .border.one{
+    left: 0;
+    top:0;
+    right: 12px;
+    bottom: 12px;
+}
+.box .border.one:before,
+.box .border.one div:before{
+    left: 0;
+    top:0;
+}
+.box .border.one:after,
+.box .border.one div:after{
+    bottom: 0;
+    right: 0;
+}
+.box .border.two{
+    left: 12px;
+    top:12px;
+    right: 0;
+    bottom: 0;
+}
+.box .border.two:before,
+.box .border.two div:before{
+    right: 0;
+    top: 0;
+}
+.box .border.two:after,
+.box .border.two div:after{
+    left: 0;
+    bottom: 0;
+}
+.box:hover .border:before,
+.box:hover .border:after{
+    width: 100%;
+}
+.box:hover .border div:before,
+.box:hover .border div:after{
+    height: 100%;
+}
+
+
+
+
+
+

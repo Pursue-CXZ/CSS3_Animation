@@ -1,0 +1,47 @@
+.container {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.star-group {
+  /* 使span的内容排序为反方向，但是元素在html里面还是原样 */
+  /* 如果元素排序为12345，那么3选中的时候无法使12变实心，因为选择器总是和当前元素之后的元素相关，比如~， + ， > */
+  /* 如果元素排序为54321，那么当3选中的时候就能使12变实心，因为表面看是12在前面，但是在html表里12在3后面，通过~ + > 等可以对其操作 */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star-group input {
+  display: none;
+}
+
+.star-group > label {
+  font-size: 0;
+}
+
+.star-group > label:before {
+  padding: 1px;
+  font-size: 1rem;
+}
+
+.star-group > input + label {
+  cursor: pointer;
+}
+
+.star-group > label:before {
+  content: "☆";
+  color: #888;
+}
+
+/* 1. 当选中的时候使自身变实心
+   2. 使选中使之前的变实心
+   3. 鼠标移动的时候使鼠标自身变实心
+   4. 鼠标移动的时候使鼠标之前变实心*/
+.star-group > input:checked ~ label:before, .star-group > input:checked + label:before, .star-group > input + label:hover:before, .star-group > input + label:hover ~ label:before {
+  content: "★";
+  color: #e52;
+  text-shadow: 0 0 1px #333;
+}
+
+
